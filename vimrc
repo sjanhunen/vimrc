@@ -5,6 +5,9 @@ set tabstop=4
 set backspace=2
 set smarttab
 
+set nu
+set ruler
+
 " Close window or tab
 map <BACKSPACE> :close<ENTER>
 
