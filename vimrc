@@ -16,8 +16,12 @@ nmap <C-T> :tabnew<ENTER>
 nmap <C-H> :tabprev<ENTER>
 nmap <C-L> :tabnext<ENTER>
 
+let g:zenburn_high_Contrast = 1
+
 colorscheme zenburn
 syntax on
+filetype plugin on
+filetype indent on
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 
