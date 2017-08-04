@@ -15,5 +15,5 @@ $(TMUX_CONF): tmux.conf
 $(VIM_COLORS):
 	mkdir -p $@
 
-$(VIM_COLORS)/%: colors/% | $(VIM_COLORS)
+$(VIM_COLORS)/%: vim/colors/% | $(VIM_COLORS)
 	cp $^ $@
