@@ -29,3 +29,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 " Show trailing whitespace and spaces before a tab:
 " Source: http://vim.wikia.com/wiki/Highlight_unwanted_spaces
 match ExtraWhitespace /\s\+$\| \+\ze\t/
+
+" Enable ctrlp plugin
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+:helptags ~/.vim/bundle/ctrlp.vim/doc
