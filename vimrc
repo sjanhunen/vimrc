@@ -3,6 +3,7 @@ set autoindent
 set sw=4
 set tabstop=4
 set backspace=2
+set expandtab
 set smarttab
 
 set nu
