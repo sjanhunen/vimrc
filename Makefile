@@ -1,10 +1,10 @@
 .PHONY: install
 
 VIM_RC = ~/.vimrc
-VIM_COLORS = ~/.vim/colors
+VIM_DIR = ~/.vim/.touch
 TMUX_CONF = ~/.tmux.conf
 
-install: $(VIM_RC) $(TMUX_CONF) $(VIM_COLORS)/zenburn.vim
+install: $(VIM_RC) $(VIM_DIR) $(TMUX_CONF)
 
 $(VIM_RC): vimrc
 	cp $^ $@
@@ -12,8 +12,7 @@ $(VIM_RC): vimrc
 $(TMUX_CONF): tmux.conf
 	cp $^ $@
 
-$(VIM_COLORS):
-	mkdir -p $@
-
-$(VIM_COLORS)/%: vim/colors/% | $(VIM_COLORS)
-	cp $^ $@
+$(VIM_DIR): ./vim
+	mkdir -p $(dir $@)
+	cp -r $^/* $(dir $@)
+	touch $@
