@@ -6,6 +6,7 @@ set backspace=2
 set expandtab
 set smarttab
 
+" Turn line numbers and ruler on
 set nu
 set ruler
 
@@ -28,8 +29,12 @@ map <silent> <down> gj
 map <silent> <home> g<home>
 map <silent> <end> g<end>
 
-let g:zenburn_high_Contrast = 1
+" Don't use backup or swap files (create less unnecessary clutter)
+set nobackup
+set nowb
+set noswapfile
 
+let g:zenburn_high_Contrast = 1
 colorscheme zenburn
 syntax on
 filetype plugin on
