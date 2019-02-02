@@ -17,6 +17,17 @@ nmap <C-T> :tabnew<ENTER>
 nmap <C-H> :tabprev<ENTER>
 nmap <C-L> :tabnext<ENTER>
 
+" Wrap lines at words
+set wrap lbr
+
+" More effective line navigation (display lines, not physical lines)
+map <silent> k gk
+map <silent> j gj
+map <silent> <up> gk
+map <silent> <down> gj
+map <silent> <home> g<home>
+map <silent> <end> g<end>
+
 let g:zenburn_high_Contrast = 1
 
 colorscheme zenburn
