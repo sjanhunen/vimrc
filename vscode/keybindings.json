@@ -1,29 +1,4 @@
 [
-    // As per https://stackoverflow.com/questions/36328029/is-there-a-hotkey-to-switch-between-split-window-panes
-
-    {
-        "key": "cmd+h",
-        "command": "workbench.action.navigateLeft"
-    },
-    {
-        "key": "cmd+l",
-        "command": "workbench.action.navigateRight"
-    },
-    {
-        "key": "cmd+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "cmd+k",
-        "command": "workbench.action.navigateUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+j",
-        "command": "workbench.action.navigateDown"
-    },
-
     // Tab navigation
     {
         "key": "ctrl+h",
@@ -34,17 +9,40 @@
         "command": "workbench.action.nextEditor"
     },
 
-    // Emulate tux "zoom"
-    // TODO: apply this intelligently to editors and console
+    // Emulate tmux pane navigation keys
+    // Inspired by https://stackoverflow.com/questions/36328029/is-there-a-hotkey-to-switch-between-split-window-panes
     {
-        "key": "cmd+z",
+        "key": "ctrl+b h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+b l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+b k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+b k",
+        "command": "workbench.action.navigateUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+b j",
+        "command": "workbench.action.navigateDown"
+    },
+
+    // Emulate tux "zoom pane"
+    {
+        "key": "ctrl+b z",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "terminalFocus"
     },
     {
-        "key": "cmd+z",
+        "key": "ctrl+b z",
         "command": "workbench.action.minimizeOtherEditors",
         "when": "editorTextFocus"
-    },
-
+    }
 ]
