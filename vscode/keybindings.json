@@ -1,5 +1,4 @@
 [
-    // Tab navigation
     {
         "key": "ctrl+h",
         "command": "workbench.action.previousEditor"
@@ -9,8 +8,6 @@
         "command": "workbench.action.nextEditor"
     },
 
-    // Emulate tmux pane navigation keys
-    // Inspired by https://stackoverflow.com/questions/36328029/is-there-a-hotkey-to-switch-between-split-window-panes
     {
         "key": "alt+h",
         "command": "workbench.action.navigateLeft"
@@ -30,7 +27,6 @@
         "when": "editorTextFocus"
     },
 
-    // Emulate tux "zoom pane"
     {
         "key": "alt+z",
         "command": "workbench.action.toggleMaximizedPanel",
@@ -42,7 +38,6 @@
         "when": "editorTextFocus"
     },
 
-    // Emulate tmux split to open / focus on terminal
     {
         "key": "alt+s",
         "command": "workbench.action.terminal.focus",

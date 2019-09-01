@@ -16,3 +16,4 @@ References:
 - Useful reference material for vimrc: https://github.com/amix/vimrc
 - List all tmux key bindings: `tmux list-keys`
 - Guide to customizing tmux: https://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
+- VS Code navigation inspired by https://stackoverflow.com/questions/36328029/is-there-a-hotkey-to-switch-between-split-window-panes
