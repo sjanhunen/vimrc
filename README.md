@@ -1,10 +1,14 @@
 # vimrc
-My baseline configuration for happy vimming
+My baseline configuration for happy editing
+
+Defines consistent key bindings for both tmux+vim and Visual Studio Code
 
 Assumes:
 
 - VIM 8.1+
 - tmux 2.6+
+- Visual Studio Code VIM Extension
+- Enable `Use Option as Meta Key` in OS X Terminal -> Preferences -> Keyboard
 
 References:
 
