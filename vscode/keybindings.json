@@ -47,5 +47,14 @@
         "key": "alt+s",
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
-    }
+    },
+
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.showCommands"
+    },
 ]
