@@ -17,31 +17,45 @@
         "command": "workbench.action.navigateRight"
     },
     {
-        "key": "alt+k",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
         "key": "alt+j",
         "command": "workbench.action.navigateDown",
         "when": "editorTextFocus"
-    },
-
-    {
-        "key": "alt+z",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "terminalFocus"
     },
     {
         "key": "alt+z",
         "command": "workbench.action.minimizeOtherEditors",
         "when": "editorTextFocus"
     },
-
     {
         "key": "alt+s",
         "command": "workbench.action.terminal.focus",
         "when": "editorTextFocus"
+    },
+
+    {
+        "key": "alt+h",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+shift+s",
+        "command": "workbench.action.terminal.split",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+z",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
     },
 
     {
@@ -51,5 +65,5 @@
     {
         "key": "ctrl+shift+p",
         "command": "workbench.action.showCommands"
-    },
+    }
 ]
